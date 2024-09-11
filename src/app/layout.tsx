@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { CallModal } from "@/components/widgets/CallModal/CallModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
+        <CallModal />
         {children}
       </body>
     </html>

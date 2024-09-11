@@ -1,0 +1,67 @@
+.container {
+  width: 587px;
+  height: 45px;
+  padding: 1px;
+  position: relative;
+
+  @media screen and (max-width: 1769px) {
+    width: 454px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: 370px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 438px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 320px;
+  }
+}
+
+.input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.label {
+  position: absolute;
+  bottom: 3px;
+  transition: 0.3s bottom, 0.3s font-size;
+
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1769px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 11px;
+  }
+}
+
+.label_focused {
+  bottom: 35px;
+  font-size: 10px;
+}
