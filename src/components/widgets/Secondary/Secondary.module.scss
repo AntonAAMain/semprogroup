@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  margin-top: 222px;
+  display: flex;
+  flex-direction: row;
+  gap: 268px;
+
+  @media screen and (max-width: 1769px) {
+    gap: 226px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    gap: 148px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 94px;
+  }
+}

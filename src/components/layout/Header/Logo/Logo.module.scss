@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  width: 187px;
+  height: 30px;
+
+  @media screen and (max-width: 1769px) {
+    width: 155px;
+    height: 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 130px;
+    height: 21px;
+  }
+}

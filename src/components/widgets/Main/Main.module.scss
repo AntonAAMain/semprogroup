@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  height: 100%;
+
+  @media screen and (max-width: 1769px) {
+    width: 1360px;
+    gap: 40px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: 964px;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 688px;
+    gap: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 320px;
+    gap: 20px;
+  }
+}
+
+.mainImg {
+  position: relative;
+  width: 1760px;
+  height: 600px;
+
+  @media screen and (max-width: 1769px) {
+    width: 1360px;
+    height: 506px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: 964px;
+    height: 411px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.mainMobileImg {
+  display: none;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    width: 688px;
+    height: 487px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 320px;
+    height: 313px;
+  }
+}
+
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 43px;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.description {
+  position: relative;
+  align-self: flex-end;
+
+  @media screen and (max-width: 1024px) {
+    align-self: flex-start;
+  }
+}
+
+.descriptionParagraph {
+  font-weight: 400;
+  font-size: 31px;
+  color: var(--font-blue);
+  text-transform: uppercase;
+  line-height: 43px;
+
+  @media screen and (max-width: 1769px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    line-height: 19.5px;
+  }
+}
+
+.title {
+  position: relative;
+  width: 862px;
+  height: 137px;
+  color: var(--font-black);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1769px) {
+    width: 717px;
+    height: 114px;
+    font-size: 160px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: 553px;
+    height: 88px;
+    font-size: 125px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 688px;
+    height: 109px;
+    font-size: 153px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 320px;
+    height: 50px;
+    font-size: 70px;
+  }
+}

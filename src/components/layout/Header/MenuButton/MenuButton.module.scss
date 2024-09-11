@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  //   border: 2px solid orange;
+  width: max-content;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btnLine {
+  position: relative;
+  width: 37.91px;
+  height: 2px;
+  background: rgb(47, 128, 237);
+}
+
+.text {
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--font-black);
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

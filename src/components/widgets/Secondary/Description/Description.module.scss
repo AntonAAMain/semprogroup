@@ -1,0 +1,134 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  position: relative;
+  width: 63px;
+  height: 12px;
+  background: var(--font-blue);
+  margin-bottom: 65px;
+
+  @media screen and (max-width: 1769px) {
+    width: 49px;
+    height: 9px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: 35px;
+    height: 6px;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 30px;
+  }
+}
+
+.mainText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--font-black);
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+  line-height: 47px;
+
+  @media screen and (max-width: 1769px) {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    font-size: 19px;
+    margin-bottom: 65px;
+    line-height: 26px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+  }
+}
+
+.mainText_primary {
+  position: relative;
+  width: 560px;
+
+  @media screen and (max-width: 1769px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: 425px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 334px;
+  }
+}
+
+.mainText_highlighted {
+  color: var(--font-blue);
+
+  width: 500px;
+
+  @media screen and (max-width: 1769px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: max-content;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 334px;
+  }
+}
+
+.secondaryText {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  color: var(--font-black);
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  line-height: 32px;
+
+  @media screen and (max-width: 1769px) {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 96px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 60px;
+    width: max-content;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 30px;
+  }
+}
+
+.secondaryText_highlighted {
+  color: var(--font-blue);
+}
+
+.secondaryText_primary {
+  width: 500px;
+
+  @media screen and (max-width: 1281px) {
+    width: 334px;
+  }
+}
