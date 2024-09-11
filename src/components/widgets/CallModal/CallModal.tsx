@@ -6,6 +6,8 @@ import { sleep } from "@/shared/helpers";
 
 import cn from "classnames";
 
+import InputMask from "react-input-mask";
+
 import cls from "./CallModal.module.scss";
 import { CallModalInput } from "./CallModalInput/CallModalInput";
 import { Button } from "./Button/Button";
@@ -27,12 +29,22 @@ export const CallModal = () => {
 
   useEffect(() => {
     changing();
+
+    setName("");
+    setPhone("");
+    setEmail("");
   }, [isActive, localActive]);
 
-  const [test, setTest] = useState("");
+  const [name, setName] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
   const blockClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) =>
     e.stopPropagation();
+
+  const buttonClick = () => {
+    console.log("Заполненные поля - ", name, phone, email);
+  };
 
   return (
     <>
@@ -46,21 +58,22 @@ export const CallModal = () => {
 
             <div className={cls.inputs}>
               <CallModalInput
-                value={test}
-                onChange={(e) => setTest(e.target.value)}
-                label="test"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                label="Ваше имя"
               />
 
               <CallModalInput
-                value={test}
-                onChange={(e) => setTest(e.target.value)}
-                label="test"
+                isPhone
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                label="Телефон"
               />
 
               <CallModalInput
-                value={test}
-                onChange={(e) => setTest(e.target.value)}
-                label="test"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                label="E-MAIL"
               />
             </div>
 
@@ -69,7 +82,7 @@ export const CallModal = () => {
               политикой обработки персональных данных
             </div>
 
-            <Button />
+            <Button onClick={buttonClick} />
           </div>
         </div>
       )}

@@ -7,4 +7,10 @@
   border-radius: 100px;
   background: rgb(47, 128, 237);
   color: white;
+  cursor: pointer;
+  transition: 0.2s background;
+
+  &:hover {
+    background: rgb(85, 145, 223);
+  }
 }
