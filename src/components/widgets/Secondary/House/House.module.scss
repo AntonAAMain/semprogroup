@@ -17,6 +17,11 @@
     width: 290px;
     height: 408px;
   }
+
+  @media screen and (max-width: 7684px) {
+    width: 296px;
+    height: 420px;
+  }
 }
 
 .circle {
@@ -51,6 +56,13 @@
     top: 59px;
     left: 249px;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 87px;
+    height: 87px;
+    top: 61px;
+    left: 253px;
+  }
 }
 
 .img {
@@ -72,6 +84,11 @@
     width: 19px;
     height: 26px;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 20px;
+    height: 27px;
+  }
 }
 
 .info {
@@ -92,5 +109,9 @@
   @media screen and (max-width: 1281px) {
     top: -20px;
     font-size: 11px;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: -10px;
   }
 }

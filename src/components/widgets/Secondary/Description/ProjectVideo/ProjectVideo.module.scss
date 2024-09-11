@@ -12,6 +12,10 @@
   @media screen and (max-width: 1281px) {
     gap: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    gap: 14px;
+  }
 }
 
 .videoPreview {
@@ -27,6 +31,11 @@
   @media screen and (max-width: 1281px) {
     width: 133px;
     height: 133px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 131px;
+    height: 131px;
   }
 }
 
@@ -79,6 +88,11 @@
 
   @media screen and (max-width: 1281px) {
     width: 69px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 59px;
+    margin-left: 10px;
   }
 }
 
