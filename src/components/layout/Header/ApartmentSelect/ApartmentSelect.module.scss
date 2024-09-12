@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  width: 240px;
+  height: 51px;
+  user-select: none;
+  justify-content: center;
+  border-radius: 118px;
+  background: rgba(47, 128, 237, 1);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transform: translateY(18px);
+  transition: 0.3s transform;
+}
+
+.text_active {
+  transform: translateY(-15px);
+}

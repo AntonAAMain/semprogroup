@@ -1,8 +1,8 @@
-import { Header } from "@/components/layout/Header/Header";
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { CallModal } from "@/components/widgets/CallModal/CallModal";
+import { Header } from "@/components/layout/Header/Header";
+import { Inter } from "next/font/google";
+import type { Metadata } from "next";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
