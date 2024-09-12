@@ -46,10 +46,17 @@ export const CallModal = () => {
     console.log("Заполненные поля - ", name, phone, email);
   };
 
+  useEffect(() => {
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+    });
+  }, []);
+
   return (
     <>
       {localActive && (
         <div
+          // onKeyDown={onKeyDown}
           onClick={close}
           className={cn(cls.container, { [cls.container_active]: isActive })}
         >
