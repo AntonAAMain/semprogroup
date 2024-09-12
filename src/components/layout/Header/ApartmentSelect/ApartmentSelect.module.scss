@@ -15,6 +15,29 @@
   color: white;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media screen and (max-width: 1769px) {
+    width: 203px;
+    height: 43px;
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 1281px) {
+    width: 192px;
+    height: 43px;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 188px;
+    height: 43px;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .text {
