@@ -3,8 +3,15 @@
   display: flex;
   flex-direction: row;
   gap: 15px;
-  //   border: 2px solid orange;
   width: max-content;
+  cursor: pointer;
+  width: 100px;
+
+  &:hover {
+    .btn {
+      gap: 8px;
+    }
+  }
 }
 
 .btn {
@@ -12,6 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+  transition: 0.3s gap;
 }
 
 .btnLine {
@@ -22,10 +30,13 @@
 }
 
 .text {
-  position: relative;
+  position: absolute;
   font-weight: 600;
   font-size: 15px;
   color: var(--font-black);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media screen and (max-width: 768px) {
     display: none;
