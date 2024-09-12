@@ -7,8 +7,20 @@
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s font-size;
+  overflow: hidden;
+  // border: 2px solid orange;
+  width: 140px;
+  height: 40px;
+}
 
-  &:hover {
-    font-size: 16px;
-  }
+.text {
+  position: absolute;
+  width: max-content;
+  top: -3px;
+
+  transition: 0.3s top;
+}
+
+.text_active {
+  top: -37px;
 }
